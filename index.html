@@ -5,11 +5,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geometry Master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body class="w-11/12 mx-auto">
+    <header class="flex justify-between items-center px-8 py-4 rounded bg-sky-200 mb-12">
+        <div>
+            <h3 class="text-5xl font-semibold">Interactive</h3>
+            <p class="text-3xl text-slate-600">Geometry Genius</p>
+        </div>
+        <div>
+            <button class="text-xl text-white bg-sky-800 px-6 py-2 rounded-md hover:bg-sky-500">Blog</button>
+        </div>
+    </header>
+    <main>
+        <div class="grid grid-cols-4 gap-4">
+            <div class="text-center px-2 py-4 border-2 border-slate-400 rounded-lg">
+                <img src="images/triangle.png" class="mb-4 mx-auto" alt="">
+                <h2 class="mb-2 text-2xl font-bold">Triangle</h2>
+                <p class="mb-3">Area (A) = 0.5 * b * h</p>
+                <input type="text" name="" id="" placeholder="b"
+                    class="inline w-1/4 mb-4 bg-slate-100 border border-slate-400 rounded-md text-center">
+                <span>cm</span>
+                <input type="text" name="" id="" placeholder="h"
+                    class="inline w-1/4 mb-4 bg-slate-100 border border-slate-400 rounded-md text-center">
+                <span>cm</span>
+                <br>
+                <button class="bg-sky-600 text-white text-xl font-semibold py-2 w-full rounded-md">Calculate</button>
+            </div>
+            <div class="text-center px-2 py-4 border-2 border-slate-400 rounded-lg">
+                <img src="images/rectangle.png" class="mb-4 mx-auto" alt="">
+                <h2 class="mb-2 text-2xl font-bold">Rectangle</h2>
+                <p class="mb-3">Area (A) = w * l</p>
+                <input type="text" name="" id="" placeholder="w"
+                    class="inline w-1/4 mb-4 bg-slate-100 border border-slate-400 rounded-md text-center">
+                <span>cm</span>
+                <input type="text" name="" id="" placeholder="l"
+                    class="inline w-1/4 mb-4 bg-slate-100 border border-slate-400 rounded-md text-center">
+                <span>cm</span>
+                <br>
+                <button class="bg-sky-600 text-white text-xl font-semibold py-2 w-full rounded-md">Calculate</button>
+            </div>
+            <div class="text-center px-2 py-4 border-2 border-slate-400 rounded-lg">
+                <img src="images/parallelogram.png" class="mb-4 mx-auto" alt="">
+                <h2 class="mb-2 text-2xl font-bold">Parallelogram</h2>
+                <p class="mb-3">Area (A) = b * h</p>
+                <input type="text" name="" id="" placeholder="b"
+                    class="inline w-1/4 mb-4 bg-slate-100 border border-slate-400 rounded-md text-center">
+                <span>cm</span>
+                <input type="text" name="" id="" placeholder="h"
+                    class="inline w-1/4 mb-4 bg-slate-100 border border-slate-400 rounded-md text-center">
+                <span>cm</span>
+                <br>
+                <button class="bg-sky-600 text-white text-xl font-semibold py-2 w-full rounded-md">Calculate</button>
+            </div>
+            <div class="text-center px-2 py-4 border-2 border-slate-400 rounded-lg">
+                <u class="font-bold">Area Calculation</u>
+                <ol class="text-left list-decimal pl-4">
 
+                </ol>
+            </div>
+            <div class="text-center px-2 py-4 border-2 border-slate-400 rounded-lg">
+                <img src="images/rhombus.png" class="mb-4 mx-auto" alt="">
+                <h2 class="mb-2 text-2xl font-bold">Rhombus</h2>
+                <p class="mb-3">Area (A) = 0.5 * d<sub>1</sub> * d<sub>2</sub></p>
+                <input type="text" name="" id="" placeholder="d1"
+                    class="inline w-1/4 mb-4 bg-slate-100 border border-slate-400 rounded-md text-center">
+                <span>cm</span>
+                <input type="text" name="" id="" placeholder="d2"
+                    class="inline w-1/4 mb-4 bg-slate-100 border border-slate-400 rounded-md text-center">
+                <span>cm</span>
+                <br>
+                <button class="bg-sky-600 text-white text-xl font-semibold py-2 w-full rounded-md">Calculate</button>
+            </div>
+            <div class="text-center px-2 py-4 border-2 border-slate-400 rounded-lg">
+                <img src="images/pentagon.png" class="mb-4 mx-auto" alt="">
+                <h2 class="mb-2 text-2xl font-bold">Pentagon</h2>
+                <p class="mb-3">Area (A) = 0.5 * p * b</p>
+                <input type="text" name="" id="" placeholder="p"
+                    class="inline w-1/4 mb-4 bg-slate-100 border border-slate-400 rounded-md text-center">
+                <span>cm</span>
+                <input type="text" name="" id="" placeholder="b"
+                    class="inline w-1/4 mb-4 bg-slate-100 border border-slate-400 rounded-md text-center">
+                <span>cm</span>
+                <br>
+                <button class="bg-sky-600 text-white text-xl font-semibold py-2 w-full rounded-md">Calculate</button>
+            </div>
+            <div class="text-center px-2 py-4 border-2 border-slate-400 rounded-lg">
+                <img src="images/ellipse.png" class="mb-4 mx-auto" alt="">
+                <h2 class="mb-2 text-2xl font-bold">Ellipse</h2>
+                <p class="mb-3">Area (A) = &pi;ab</p>
+                <input type="text" name="" id="" placeholder="a"
+                    class="inline w-1/4 mb-4 bg-slate-100 border border-slate-400 rounded-md text-center">
+                <span>cm</span>
+                <input type="text" name="" id="" placeholder="b"
+                    class="inline w-1/4 mb-4 bg-slate-100 border border-slate-400 rounded-md text-center">
+                <span>cm</span>
+                <br>
+                <button class="bg-sky-600 text-white text-xl font-semibold py-2 w-full rounded-md">Calculate</button>
+            </div>
+
+        </div>
+    </main>
 </body>
 
 </html>
